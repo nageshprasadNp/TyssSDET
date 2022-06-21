@@ -41,7 +41,7 @@ public class ToCreatePurchaseOrderWithItemAndAddServiceTest {
 	
 		//initialzing webdriver
 		WebDriver driver=null;
-		
+		//fetching the data from property file
 		FileInputStream fis=new FileInputStream("./src/test/resources/data.properties");
 		Properties prop=new Properties();
 		prop.load(fis);
@@ -52,7 +52,7 @@ public class ToCreatePurchaseOrderWithItemAndAddServiceTest {
 		String LoginTitle=prop.getProperty("LoginTitle");
 		
 	
-		
+		//fetching the data from excel
 		FileInputStream fstream=new FileInputStream("./src/test/resources/InputData.xlsx");
 		Workbook wb=WorkbookFactory.create(fstream);
 	 	String subject= wb.getSheet("sheet1").getRow(16).getCell(2).getStringCellValue();
