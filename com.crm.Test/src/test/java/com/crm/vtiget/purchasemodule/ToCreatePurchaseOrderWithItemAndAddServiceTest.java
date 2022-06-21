@@ -53,7 +53,7 @@ public class ToCreatePurchaseOrderWithItemAndAddServiceTest {
 		String service_name=elib.readExcelData("sheet1",19, 2);
 		String product_name=elib.readExcelData("sheet1", 1, 2);
 		
-	
+		//to generat the random number
 		int randNum = jlib.getrandomNumber();
 	//verifying browser type		
 		if(browser.equalsIgnoreCase("chrome"))
