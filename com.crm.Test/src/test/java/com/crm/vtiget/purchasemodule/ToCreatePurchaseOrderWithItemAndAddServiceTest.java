@@ -98,7 +98,7 @@ driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//img[@title='Create Purchase Order...']")).click();
 		
 		
-		//in new purchase order page inspect subject
+		//in new purchase order page inspec
 		
 		driver.findElement(By.name("subject")).sendKeys(subject);
 		
