@@ -71,8 +71,9 @@ public class ToCreatePurchaseOrderWithItemAndAddServiceTest {
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();
 		}
-		
+		//to maximize the window
 		driver.manage().window().maximize();
+		//to enter url fetching from property file
 		driver.get(url);
 		
 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
