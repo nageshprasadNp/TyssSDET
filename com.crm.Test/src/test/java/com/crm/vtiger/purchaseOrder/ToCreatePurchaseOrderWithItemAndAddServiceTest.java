@@ -45,10 +45,10 @@ public class ToCreatePurchaseOrderWithItemAndAddServiceTest {
 		FileInputStream fis=new FileInputStream("./src/test/resources/data.properties");
 		Properties prop=new Properties();
 		prop.load(fis);
-		//String url = prop.getProperty("url");
+		String url = prop.getProperty("url");
 		String username = prop.getProperty("username");
 		String password = prop.getProperty("password");
-		//String browser = prop.getProperty("browser");
+		String browser = prop.getProperty("browser");
 		String LoginTitle=prop.getProperty("LoginTitle");
 		
 	
